@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header--flex">
+          <div class="header__logo">URLAUBSGLÜCK</div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="header__menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero--flex">
+          <h1 class="hero__title">Share your holiday dreams</h1>
+          <p class="hero__subtitle">
+            And find the perfect partner to fullfill it
+          </p>
+          <a class="hero__link-btn" href="#!">Find your holiday partner</a>
+        </div>
+      </section>
+      <section class="partner">
+        <div class="container">
+          <h2 class="partner__title">Meet a partner for your best holiday</h2>
+          <ul class="partner__list">
+            <li class="partner__item">
+              <img
+                src="./img/bradley-photo.png"
+                alt="Bradley Hunter"
+                class="partner__photo"
+              />
+              <h3 class="partner__name">Bradley Hunter</h3>
+              <p class="partner__legend">
+                Based in Chicago. I love playing tennis and loud music.
+              </p>
+            </li>
+            <li class="partner__item">
+              <img
+                src="img/lucas-photo.png"
+                alt="Lucas Marsha"
+                class="partner__photo"
+              />
+              <h3 class="partner__name">Lucas Marsha</h3>
+              <p class="partner__legend">
+                I get my inspiration from nature and objects around me. I have a
+                passion to colours, typography and skateboards.
+              </p>
+            </li>
+            <li class="partner__item">
+              <img
+                src="./img/heather-photo.png"
+                alt="Heather Walker"
+                class="partner__photo"
+              />
+              <h3 class="partner__name">Heather Walker</h3>
+              <p class="partner__legend">
+                I'm a happy person that loves cats and climbing on mountains.
+              </p>
+            </li>
+            <li class="partner__item">
+              <img
+                src="./img/lara-photo.png"
+                alt="Bradley Hunter"
+                class="partner__photo"
+              />
+              <h3 class="partner__name">Bradley Hunter</h3>
+              <p class="partner__legend">
+                Based in Chicago. I love playing tennis and loud music.
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="partner__btn">See other partners</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

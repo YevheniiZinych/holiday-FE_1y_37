@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 49px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 250px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.header {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 19px;
+}
+.header--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #ffffff;
+}
+.header__menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.hero {
+  height: 542px;
+  width: 322px;
+  margin: 0 auto;
+  padding-top: 180px;
+  background: no-repeat url("../../img/bg-img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 700px;
+    width: 768px;
+    padding-top: 140px;
+    background: no-repeat url("../../img/bg-img-tab.jpeg");
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    width: 1440px;
+    background: no-repeat url("../../img/bg-img-desc.jpeg");
+  }
+}
+@media (min-width: 768px) {
+  .hero--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.hero__title {
+  width: 270px;
+  margin-bottom: 13px;
+  font-size: 30px;
+  line-height: 1.2333333333;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    width: 500px;
+    margin-bottom: 36px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2115384615;
+  }
+}
+.hero__subtitle {
+  width: 247px;
+  margin-bottom: 17px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.1666666667;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__subtitle {
+    width: 428px;
+    margin-bottom: 33px;
+  }
+}
+.hero__link-btn {
+  display: block;
+  width: 282px;
+  height: 43px;
+  padding: 10px 0;
+  background-color: #ff4e50;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.partner {
+  padding-top: 64px;
+  padding-bottom: 57px;
+}
+.partner__title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.2272727273;
+}
+@media (min-width: 768px) {
+  .partner__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 63px;
+    -webkit-column-gap: 53px;
+       -moz-column-gap: 53px;
+            column-gap: 53px;
+  }
+}
+@media (min-width: 1440px) {
+  .partner__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-column-gap: 37px;
+       -moz-column-gap: 37px;
+            column-gap: 37px;
+  }
+}
+.partner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.partner__photo {
+  width: 120px;
+  margin-bottom: 11px;
+}
+.partner__name {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.partner__legend {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: #666666;
+}
+@media (min-width: 768px) {
+  .partner__legend {
+    width: 240px;
+  }
+}
+.partner__btn {
+  width: 280px;
+  height: 40px;
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  color: #ff4e50;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2142857143;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  background-color: aqua;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 19px;
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    color: $white-color;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
+}
