@@ -5,10 +5,17 @@
   margin: 0 auto;
   padding-top: 180px;
 
-  background: no-repeat url("../../img/bg-img.jpeg");
+  background: no-repeat url("../../img/bg-img-mob.jpeg");
 
   background-size: cover;
   background-position: center;
+
+  // !! Додаємо фонове зображення для ретини дисплею
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../img/bg-img-mob@2x.jpeg");
+  }
 
   @media (min-width: $tablet) {
     height: 700px;
@@ -17,11 +24,25 @@
     padding-top: 140px;
 
     background: no-repeat url("../../img/bg-img-tab.jpeg");
+
+    // !! Додаємо фонове зображення для ретини дисплею, для планшету
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-img-tab@2x.jpeg");
+    }
   }
 
   @media (min-width: $desktop) {
     width: $desktop;
     background: no-repeat url("../../img/bg-img-desc.jpeg");
+
+    // !! Додаємо фонове зображення для ретини дисплею, для ПК
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-img-desc@2x.jpeg");
+    }
   }
 
   &--flex {
@@ -92,3 +113,17 @@
     color: $white-color;
   }
 }
+
+/* Базові стилі і 1x зображення */
+// .box {
+//   width: 480px;
+//   height: 320px;
+//   background-image: url("photo.png");
+//   background-size: cover;
+
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url("photo@2x.png");
+//   }
+// }
